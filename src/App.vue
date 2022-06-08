@@ -1,24 +1,22 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import RealTime from "./components/RealTime.vue";
+import { realTime } from "./requests";
+const value = realTime("bitcoin");
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
+      <h1>Dacxi: Frontend Test</h1>
     </div>
   </header>
-
-  <RouterView />
+  <body>
+    <RealTime v-bind:value="value" />
+  </body>
 </template>
 
 <style>
-@import '@/assets/base.css';
+@import "@/assets/base.css";
 
 #app {
   max-width: 1280px;

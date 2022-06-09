@@ -1,14 +1,30 @@
 <template>
   <div id="real-time">
     <h2>Bitcoin to USD</h2>
-    <p>{{ value }}</p>
+    <p>US$: {{ value }}</p>
   </div>
 </template>
 
 <script>
+import { realTimeRequest } from "../requests";
 export default {
   name: "RealTime",
-  props: ["value"],
+  data() {
+    return {
+      value: "",
+    };
+  },
+  methods: {
+    async realTimeFunc() {
+      this.value = await realTimeRequest();
+    },
+  },
+  created() {
+    this.realTimeFunc();
+    setInterval(async () => {
+      this.value = await realTimeRequest();
+    }, 5000);
+  },
 };
 </script>
 

@@ -1,7 +1,6 @@
 <script setup>
 import RealTime from "./components/RealTime.vue";
-import { realTime } from "./requests";
-const value = realTime("bitcoin");
+import SelectDate from "./components/SelectDate.vue";
 </script>
 
 <template>
@@ -11,7 +10,8 @@ const value = realTime("bitcoin");
     </div>
   </header>
   <body>
-    <RealTime v-bind:value="value" />
+    <RealTime />
+    <SelectDate />
   </body>
 </template>
 

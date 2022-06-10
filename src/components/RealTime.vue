@@ -1,5 +1,5 @@
 <template>
-  <div id="real-time">
+  <div class="lg:m-8">
     <h2>Bitcoin to USD</h2>
     <p>US$: {{ value }}</p>
   </div>
@@ -23,7 +23,7 @@ export default {
     this.realTimeFunc();
     setInterval(async () => {
       this.value = await realTimeRequest();
-    }, 5000);
+    }, 30000);
   },
 };
 </script>

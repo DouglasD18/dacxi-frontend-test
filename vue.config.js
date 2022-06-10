@@ -1,4 +1,5 @@
 // eslint-disable-next-line no-undef
 module.exports = {
-  publicPath: "/dacxi-frontend-test",
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/dacxi-frontend-test" : "/",
 };

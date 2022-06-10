@@ -27,7 +27,7 @@ The main features of the application are:
 
 ## Links
   - Deploy on GitHub Pages: https://douglasd18.github.io/dacxi-frontend-test/
-  - Repository: https://github.com/DouglasD18/dacxi-frontend-test
+  - Repository: https://github.com/douglasd18/dacxi-frontend-test
 
 ## Versioning
 

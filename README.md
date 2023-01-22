@@ -1,7 +1,11 @@
-## Test Frontend: Douglas Aguiar
+# Vue Aplication
 This is my test for Dacxi \o/ 
 Enjoy It!
 
+![Aplicação rodando](interface.png)
+
+# Contexto
+Aplicação frontend para conversão do valor de criptomoedas em moedas em determinada data, através de requisição a uma API.
 
 ## Technology 
 
@@ -31,9 +35,4 @@ The main features of the application are:
 
 ## Versioning
 
-  1.0.0.0
-
-
-## Authors
-
-  * **Douglas Aguiar** 
+  1.0.0
